@@ -42,7 +42,7 @@ Lesson | Learning outcome | Source file | Related functions
 [04](#lesson-05-image-loading-and-texture-creation) | image data loading, <br>texture creation and drawing | [05_dungeon_game_textures.c](lessosn/05_dungeon_game_textures.c) | LoadImage(), UnloadImage(), <br>LoadTexture(), UnloadTexture(), LoadBMP()
 [05](#lesson-05-tilemap-data-loading) | tilemap data loading | [05_dungeon_game_tilemap.c](lessons/05_dungeon_game_tilemap.c) | LoadTilemap(), UnloadTileMap()
 [06](#lesson-06-collision-detection) | tilemap collision detection | [06_dungeon_game_collisions.c](lessons/06_dungeon_game_collisions.c) | CheckCollisionTilemap()
-[07](#lesson-07-sprite-animation) | sprite animation | [07_Sprite_animation.c](lessons/07_ Sprite animation.c) | DrawTextureRec()
+[07](#lesson-07-sprite-animation) | sprite animation | [07_Sprite_animation.c](lessons/07_Sprite_animation.c) | DrawTextureRec()
 
 **NOTE:** Most of the documentation for the challenge is directly included in the source code files as code comments. Read carefully those comments to understand every task and how implement the proposed solutions.
 
