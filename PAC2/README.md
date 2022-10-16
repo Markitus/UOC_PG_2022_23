@@ -8,7 +8,7 @@
 ## Introduction
 In this challenge we will implement a 2D Dungeons game similar to the dungeons of [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda) classic game (Nintendo, 1986). Along this process we will learn how to manage game tiles and construct levels with them, how to manage the window and player inputs from a lower level perspective (in comparison to previous challenge), how to load image data from files and convert it to textures in GPU, how to draw basic shapes and textures and, finally, some basic 2D graphics animations (spritesheet based).
 
-This game is developed using [rlgl](), a [raylib](http://www.raylib.com/) auxiliar module intended to simplify low level GPU access and teach basic principles of graphics programming like vertex buffers usage, textures binding, shaders usage...
+This game is developed using the extra library **rlgl** for additional functionality, this library is already integrated to the [raylib](http://www.raylib.com/) framework to simplify low level GPU access and teach basic principles of graphics programming like vertex buffers usage, textures binding, shaders usage...
 
 Before starting with this challenge, it's recommended to complete the previous challenge: 
  - [Challenge 01: Blocks game](../01_challenge_blocks) - A blocks game where player has to break a wall of blocks controlling a ball with a paddle.
@@ -22,14 +22,13 @@ It's assumed that all concepts explained in that challenge have already been lea
  - Sounds and music loading and playing
 
 **Learning Outcomes:**
- - rlgl functionality and possibilities
- - Window creation, configuration and management (GLFW3)
- - Context creation (OpenGL 3.3) and extensions loading (GLAD)
+ - Window and Context creation
+ - Basic shaped drawing (immediate-mode)
  - Inputs management (keyboard, mouse) (GLFW3)
- - Basic shaped drawing defining vertex data (immediate-mode)
  - Image loading (RAM), texture creation (VRAM) and drawing
  - Tile map data loading from text file
  - Tile map collisions management
+ - Sprite Animation
  
 **NOTE:** All code provided is in C language for simplicity and clearness but it's up to the student to use more complex C++ code structures (OOP) if desired.
  
@@ -38,12 +37,12 @@ It's assumed that all concepts explained in that challenge have already been lea
 Lesson | Learning outcome | Source file | Related functions
 :-----:|------------------|:------------|:-----------------:
 [01](#lesson-01-window-creation-and-management) | window creation and management | [01_dungeon_game_window.c](lessons/01_dungeon_game_window.c) | InitWindow(), <br>CloseWindow()
-[02](#lesson-02-graphics-device-initialization) | context initialization, <br>extensions loading | [02_dungeon_game_graphics.c](lessons/02_dungeon_game_graphics.c) | InitGraphicsDevice()
+[02](#lesson-02-basic-shapes-definition-and-drawing) | basic shapes definition | [02_dungeon_game_shapes.c](lessons/02_dungeon_game_shapes.c) | DrawLine(), DrawTriangle(), DrawRectangle()
 [03](#lesson-03-inputs-management) | inputs management (keyboard) | [03_dungeon_game_inputs.c](lessons/03_dungeon_game_inputs.c) | IsKeyDown(), IsKeyPressed()
-[04](#lesson-04-basic-shapes-definition-and-drawing) | basic shapes definition | [04_dungeon_game_shapes.c](lessons/04_dungeon_game_shapes.c) | DrawLine(), DrawTriangle(), DrawRectangle()
-[05](#lesson-05-image-loading-and-texture-creation) | image data loading, <br>texture creation and drawing | [05_dungeon_game_textures.c](lessosn/05_dungeon_game_textures.c) | LoadImage(), UnloadImage(), <br>LoadTexture(), UnloadTexture(), LoadBMP()
-[06](#lesson-06-tilemap-data-loading) | tilemap data loading | [06_dungeon_game_tilemap.c](lessons/06_dungeon_game_tilemap.c) | LoadTilemap(), UnloadTileMap()
-[07](#lesson-07-collision-detection) | tilemap collision detection | [07_dungeon_game_collisions.c](lessons/07_dungeon_game_collisions.c) | CheckCollisionTilemap()
+[04](#lesson-05-image-loading-and-texture-creation) | image data loading, <br>texture creation and drawing | [05_dungeon_game_textures.c](lessosn/05_dungeon_game_textures.c) | LoadImage(), UnloadImage(), <br>LoadTexture(), UnloadTexture(), LoadBMP()
+[05](#lesson-05-tilemap-data-loading) | tilemap data loading | [05_dungeon_game_tilemap.c](lessons/05_dungeon_game_tilemap.c) | LoadTilemap(), UnloadTileMap()
+[06](#lesson-06-collision-detection) | tilemap collision detection | [06_dungeon_game_collisions.c](lessons/06_dungeon_game_collisions.c) | CheckCollisionTilemap()
+[07](#lesson-07-sprite-animation) | sprite animation | [07_ Sprite animation.c](lessons/07_ Sprite animation.c) | DrawTextureRec()
 
 **NOTE:** Most of the documentation for the challenge is directly included in the source code files as code comments. Read carefully those comments to understand every task and how implement the proposed solutions.
 
