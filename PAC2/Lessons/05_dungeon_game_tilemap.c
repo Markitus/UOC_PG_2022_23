@@ -1,8 +1,8 @@
 /*******************************************************************************************
 *
 *   Challenge 02:   DUNGEON GAME
-*   Lesson 05:      image and textures
-*   Description:    Image data loading, texture creation and drawing
+*   Lesson 05:      tilemap
+*   Description:    Tilemap loading and drawing
 *
 *
 *   Copyright (c) 2017-2022 Ramon Santamaria (@raysan5)
