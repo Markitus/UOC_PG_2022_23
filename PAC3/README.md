@@ -91,7 +91,7 @@ void BeginMode2D(Camera2D camera);          // Begin 2D mode with custom camera 
 void EndMode2D(void);                       // Ends 2D mode with custom camera
 ```
 
-After executing the lesson02, you should see something like this:
+After executing the lesson02, you should see something like this (after some keyboard and mouse events):
 
 ![Camera2D](images/02_lesson.jpg "Camera 2D") 
 
@@ -128,7 +128,7 @@ In this lesson we are loading the level map from image data and we will generate
 
 The image data you can find it in image/04_cubicmap.png and it looks like this:
 
-![Cubicmap](images/04_cubicmap.png "Cubicmap") 
+![Cubicmap](images/04_cubicmap.jpg "Cubicmap") 
 
 Basically we will treat every white pixel as a cube with walls and every black pixel by an empty space, using this convention we will create every required cube vertex by vertex.
 
