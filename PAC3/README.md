@@ -36,7 +36,7 @@ It's assumed that all concepts explained in those challenges have already been l
 
 Lesson | Learning outcome | Source file | Related functions
 :-----:|------------------|:------------|:-----------------:
-[01](#lesson-01-introduction-and-textures) | window and context creation, <br>image loading, <br>texture creation and drawing | [01_maze_game_intro_and_textures.c](lessons/01_maze_game_intro_and_textures.c) | InitWindow(), <br>CloseWindow(), <br>LoadImage(), LoadTexture()
+[01](#lesson-01-introduction-and-textures) | window and context creation, <br>image loading, <br>texture creation and drawing | [01_maze_game_intro_and_textures.c](lessons/01_maze_game_intro_and_textures) | InitWindow(), <br>CloseWindow(), <br>LoadImage(), LoadTexture()
 [02](#lesson-02-game-camera2D-Orthograhic) | Camera 2D System (Orthographic) | [02_maze_game_camera2D_Orthographic](lessons/02_maze_game_camera2D_Orthographic.c) | Camera2D, <br>BeginMode2D(camera), <br>EndMode2D()
 [03](#lesson-03-game-camera3D-Projection) | Camera 3D System (Camera Free) | [03_maze_game_camera3D_Projection.c](lessons/03_maze_game_camera3D_Projection.c) | Camera3D, SetCameraMode(...), <br> UpdateCamera(...)
 [04](#lesson-04-level-map-loading) | level map loading, <br>vertex buffers creation | [04_maze_creation_cubicmap.c](lessons/04_maze_creation_cubicmap.c) | GenMeshCubicmap()
