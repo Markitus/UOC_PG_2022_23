@@ -179,7 +179,7 @@ After executing the lesson06, you should see something like lesson 05 but with w
 
 ### Lesson 07: Models loading
 
-*Lesson code file to review: [07_maze_game_collisions.c](Lessons/07_maze_game_collisions.c)*
+*Lesson code file to review: [07_maze_game_models.c](Lessons/07_maze_game_models.c)*
 
 In this lesson we will learn to load simple 3D models from OBJ fileformat, one of the most simple mesh formats. Once mesh is loaded, we can place it anywhere in the scene and draw it using a texture.
 
