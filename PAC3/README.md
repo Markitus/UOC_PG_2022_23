@@ -12,7 +12,7 @@ This game is developed using Raylib, a simple and easy-to-use library to enjoy v
 
 Before starting with this challenge, it's recommended to complete the previous challenges: 
  - [Challenge 01: Blocks game](https://github.com/raysan5/challenges/tree/master/01_challenge_blocks) - A blocks game where player has to break a wall of blocks controlling a ball with a paddle.
- - [Challenge 02: 2D Dungeon game](../02_challenge_dungeon2d) - A tile-based dungeon 2D game where player moves around a 2D dungeon finding keys and defeating monsters.
+ - [Challenge 02: 2D Dungeon game](https://github.com/eteg09/UOC_PG_2022_23/tree/main/PAC2) - A tile-based dungeon 2D game where player moves around a 2D dungeon finding keys and defeating monsters.
 
 It's assumed that all concepts explained in those challenges have already been learnt by student.
 
