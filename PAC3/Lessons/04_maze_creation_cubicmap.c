@@ -36,8 +36,6 @@ int main(void)
     // LESSON04: We load the texture used by the Cubicmap
     Image imMap = LoadImage("resources/cubicmap.png");      // Load cubicmap image (RAM)
     Texture2D cubicmap = LoadTextureFromImage(imMap);       // Convert image to texture to display (VRAM)
-    UnloadImage(imMap);             // Unload image from RAM
-
 
     Mesh mesh = GenMeshCubicmap(imMap, (Vector3) { 1.0f, 1.0f, 1.0f });
     Model model = LoadModelFromMesh(mesh);
